@@ -18,7 +18,7 @@ SITE DA GLOBO REFEITO COM HTML E CSS
 - CSS
 - RESET DO CSS
 
-![TELA INICIAL](./images/TELA PROTOTIPADA.png)
+![TELA INICIAL](/images/TELA PROTOTIPADA.png)
 
 
 Projeto feito por Nathiel da Silva Santos
