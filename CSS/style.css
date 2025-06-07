@@ -1,0 +1,339 @@
+body{
+    font-family: "Globo Cd Bd"; 
+    background-color: #e9e9e9; 
+}
+
+#navlocal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: "Globo Cd Bd";
+    src: 
+    url("My fonts/Globo-Cd-Bd.ttf"),
+    format("truetype");
+    font-weight: bold;
+}
+
+:root {
+    --color-green: #05A948;
+    --color-green2: #016767;
+    --color-orange: #ff6701;
+    --color-red: #fb0434;
+    --color-red2: #c4160d;  
+    --color-red3: #9d110a;  
+    --color-blue: #0569de;
+    --color-blue2: #1d4c9a;
+    --color-grey: #f9f9f9;
+    --color-grey2: rgb(159, 156, 156);
+    --color-white: #ffffff; 
+    --color-blue-globocom: #0569DE;
+    --color-green-ge: #05A948;
+    --font-primary:  "globo-cd-bd", Arial, sans-serif;  
+} 
+
+@keyframes slidein {
+    from {
+        width: 130px; 
+        background-color: var(--color-red3); 
+    }
+    to {
+        margin-left: 0%; 
+        width: 150px;    
+        background-color: var(--color-white); 
+    }
+}
+
+#containersearch.active{
+    animation: slidein 1s forwards;
+}
+
+#logo-main {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-grow: 1; 
+}
+
+#logo-main svg {
+    height: 55px;
+    width: auto;
+    display: block; 
+}
+
+#boxflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4160d; 
+    color: var(--color-white);           
+    height: 60px;                        
+    padding: 0;                         
+}
+
+#boxflex .box{
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#menu {
+    cursor: pointer;
+    font-size: 14px; 
+    font-weight: bold; 
+    padding: 0 15px; 
+    height: 100%; 
+    display: flex; /* Para alinhar o ícone e o span vertical */
+    align-items: center; 
+}
+
+#menu span {
+    text-transform: uppercase; 
+    font-family: "Globo Cd Bd", Arial, sans-serif; 
+}
+#menu .fa-bars {
+    margin-right: 8px; 
+    font-size: 18px;
+    color: var(--color-white); 
+}
+
+
+#inp-search {
+    cursor: pointer;
+    background-color: var(--color-red3); 
+    padding: 0 20px; 
+    height: 100%; 
+    display: flex;
+    align-items: center; 
+    margin-left: auto; 
+}
+
+#inp-search .fa-search {
+    margin-right: 8px; 
+    font-size: 16px; 
+    color: var(--color-white); 
+}
+
+#inp-search input[type="text"] {
+    background-color: transparent; 
+    border: none; 
+    color: var(--color-white); 
+    font-family: "Globo Cd Bd", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold; 
+    width: 80px; 
+    padding: 5px 0; 
+    text-transform: uppercase; 
+}
+
+#inp-search input[type="text"]:hover {
+    width: 150px;
+    transition: width}
+
+#inp-search input[type="text"]::placeholder {
+    color: var(--color-white); /* Cor do placeholder */
+    opacity: 1; 
+    font-family: "Globo Cd Bd", Arial, sans-serif; 
+    font-weight: bold; 
+    text-transform: uppercase; /* <<< ADICIONE para o placeholder "BUSCAR" */
+}
+
+#inp-search input[type="text"]:focus{
+    outline: none;
+}
+
+.barra-superior-globocom {
+    font-family: var(--font-primary);
+    display: flex;                     
+    justify-content: space-between;   
+    align-items: center;               /* Alinha verticalmente os itens no centro da barra cinza */
+    background-color: #f0f0f0;
+    padding: 5px 15px;                
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 35px;               
+}
+
+.links-produtos a {
+    font-family: var(--font-primary);
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    font-family: "Globo Cd Bd", Arial, sans-serif; 
+    font-size: 13px; 
+    text-transform: lowercase; 
+}
+
+.links-produtos a.link-g1 { 
+    font-family: var(--font-primary);
+    text-transform: none;
+}
+
+.links-produtos .link-globocom { color: #0569DE; }
+.links-produtos .link-g1 { color: #c4160d; } 
+.links-produtos .link-ge { color: #05A948; }
+.links-produtos .link-gshow { color: #FF6701; }
+.links-produtos .link-globoplay { color: #FB0434; }
+.links-produtos .link-g1jogos { color: #c4160d; }
+.links-produtos .link-oglobo { color: #1D4C9A; }
+.links-produtos .link-valor { color: #016767; }
+
+.perfil-usuario {
+    display: flex; 
+    align-items: center;
+}
+
+.perfil-usuario .foto-perfil {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+
+.conteudo-principal {
+    padding: 20px 13px;
+    height: 550px; 
+    background-color: #f9f9f9; 
+    max-width: 1300px; 
+    margin: 50px auto; 
+}
+
+.container-noticias {
+    height: 515px;
+    display: flex; 
+    gap: 50px;     
+}
+
+.coluna-esquerda {
+    height: 500px;
+    flex: 2; 
+    background-color: #ffffff; 
+    padding: 20px;
+    border: 1px solid #e0e0e0; 
+}
+
+.noticia-destaque .categoria-noticia {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.noticia-destaque .titulo-noticia-destaque {
+    font-family: var(--font-primary);
+    font-size: 50px; 
+    line-height: 1.2;
+    color: var(--color-red2); 
+    margin-bottom: 70px;
+}
+
+.noticia-destaque .descricao-noticia-destaque {
+    font-family: var(--font-primary);
+    font-size: 25px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.coluna-direita {
+    font-family: var(--font-primary);
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.noticia-secundaria.com-imagem {
+    font-family: var(--font-primary);
+    position: relative; 
+    color: var(--color-white); 
+    min-height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    padding: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end; 
+    border-radius: 4px; 
+    overflow: hidden; 
+}
+
+.noticia-secundaria.com-imagem::before {
+    font-family: var(--font-primary);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%);
+    z-index: 1; 
+}
+
+.noticia-secundaria .conteudo-sobre-imagem {
+    font-family: var(--font-primary);
+    position: relative; 
+    z-index: 2;
+}
+
+.noticia-secundaria .categoria-noticia {
+    font-family: var(--font-primary);
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.noticia-secundaria .titulo-noticia-secundaria {
+    font-family: var(--font-primary);
+    font-size: 18px; 
+    line-height: 1.3;
+    margin-bottom: 5px;
+    font-weight: bold; 
+}
+
+.noticia-secundaria .descricao-noticia-secundaria {
+    font-family: var(--font-primary);
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0.9;
+}
+
+#noticia-drone {
+    background-image: url(/images/FOTINHA.png); 
+}
+
+#noticia-macacos {
+    background-image: url(/images/paia.jpg); 
+}
+
+@media (max-width: 768px) {
+    .container-noticias {
+        flex-direction: column; 
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        flex: 1; 
+    }
+
+    .noticia-destaque .titulo-noticia-destaque {
+        font-size: 24px; 
+    }
+
+    .noticia-secundaria .titulo-noticia-secundaria {
+        font-size: 16px;
+    }
+}
