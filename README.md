@@ -18,5 +18,6 @@ SITE DA GLOBO REFEITO COM HTML E CSS
 - CSS
 - RESET DO CSS
 
+---
 
 Projeto feito por Nathiel da Silva Santos

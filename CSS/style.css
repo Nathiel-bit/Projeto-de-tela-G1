@@ -200,6 +200,8 @@ body{
 }
 
 .conteudo-principal {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 13px;
     height: 550px; 
     background-color: #f9f9f9; 
@@ -208,13 +210,15 @@ body{
 }
 
 .container-noticias {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 515px;
     display: flex; 
     gap: 50px;     
 }
 
 .coluna-esquerda {
-    height: 500px;
+    height: 475px;
     flex: 2; 
     background-color: #ffffff; 
     padding: 20px;
